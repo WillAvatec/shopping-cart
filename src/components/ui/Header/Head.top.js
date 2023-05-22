@@ -1,4 +1,4 @@
-import logo from "../../../styles/images/logo.png"
+import logo from "../../../assets/images/logo.png"
 const Top = () => {
     return (
         <div className='wrapper'>

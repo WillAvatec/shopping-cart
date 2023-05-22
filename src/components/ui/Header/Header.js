@@ -1,6 +1,6 @@
-import Bottom from "./Bottom-Head"
-import Top from "./Top-Head"
-import "../../../styles/header.css"
+import Bottom from "./Head.bottom"
+import Top from "./Head.top"
+import "../../../assets/header.css"
 
 const Header = () => {
     return (
