@@ -1,0 +1,85 @@
+:root{
+    --bg-card:#f2eeeb;
+    --card-border:rgb(229,229,229)
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 1;
+    }
+
+    50% {
+        display: block;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: block;
+        opacity: 0.2;
+    }
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    width: max(18.229vw,300px);
+    margin: 0 25px 50px 0;
+    border: 2px solid var(--card-border);
+}
+
+.img-container {
+    position: relative;
+    width: max(18.229vw,300px);
+    height: max(18.229vw,300px);
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--card-border);
+}
+
+.front-card-img {
+    position: absolute;
+    margin: 10px;
+}
+
+.front-card-img:hover {
+    animation: fadeInFromNone 0.3s ease-out;
+    animation-fill-mode: forwards
+}
+
+
+.card img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.def-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.card-title {
+    padding: 15px 20px 15px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card-description {
+    display: hidden;
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-description:hover{
+    display:block
+}
+
+.card-price {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
