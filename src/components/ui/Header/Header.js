@@ -4,10 +4,10 @@ import "../../../assets/header.css"
 
 const Header = () => {
     return (
-        <div className="header-wrapper">
+        <header>
             <Top/>
             <Bottom/>
-        </div>
+        </header>
     )
 }
 
