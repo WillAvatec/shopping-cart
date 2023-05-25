@@ -1,41 +1,33 @@
-import { useState, useEffect } from "react"
-import Header from "../components/ui/Header/Header";
-import Card from "../components/card/Card";
 import "../assets/card.css"
 import "../assets/catalog.css"
+import Header from "../components/ui/Header/Header";
+import Card from "../components/Card";
+import mockData from "../mocks/products.json"
+import { CartProvider } from "../context/cart";
 
-const ENDPOINT_CATEGORY = "men's clothing"
 
 function CatalogPage() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(()=>{
-    if(!products.length){
-      fetch(`https://fakestoreapi.com/products/category/${ENDPOINT_CATEGORY}`)
-            .then(res=>res.json())
-            .then(json=>setProducts(json))
-    }
-  },[products])
 
   return (
-    <div className="home">
-      <Header />
-      <div id="cards-container">
-        {products.length
-          ? products.map(product => {
-            return (
-              <Card 
-                image={product.image} 
-                title={product.title}
-                description={product.description}
-                price={product.price} 
-              />
-            )
-          })
-          : null
-        }
+    <CartProvider>
+      <div className="home">
+        <Header />
+        <div id="cards-container">
+          {mockData.map(product => {
+              return (
+                <Card
+                  key={product.id}
+                  image={product.thumbnail} 
+                  title={product.title}
+                  price={product.price}
+                  product={product}
+                />
+              )
+            })
+          }
+        </div>
       </div>
-    </div>
+    </CartProvider>
   );
 }
 
