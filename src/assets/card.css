@@ -40,6 +40,11 @@
     border-bottom: 2px solid var(--card-border);
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 .front-card-img {
     position: absolute;
     margin: 10px;
@@ -63,6 +68,7 @@
 }
 
 .card-title {
+    text-align: center;
     padding: 15px 20px 15px 0;
     font-size: 1.2rem;
     font-weight: 500;
@@ -79,6 +85,7 @@
 }
 
 .card-price {
+    text-align: center;
     padding-top: 10px;
     font-weight: 400;
     font-size: 1.1rem;
