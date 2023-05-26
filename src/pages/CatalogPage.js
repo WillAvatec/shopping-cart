@@ -3,13 +3,10 @@ import "../assets/catalog.css"
 import Header from "../components/ui/Header/Header";
 import Card from "../components/Card";
 import mockData from "../mocks/products.json"
-import { CartProvider } from "../context/cart";
-
 
 function CatalogPage() {
 
   return (
-    <CartProvider>
       <div className="home">
         <Header />
         <div id="cards-container">
@@ -27,7 +24,6 @@ function CatalogPage() {
           }
         </div>
       </div>
-    </CartProvider>
   );
 }
 
