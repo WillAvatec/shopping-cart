@@ -4,35 +4,62 @@ import "../assets/aside.css"
 import {useCart} from "../hooks/useCart"
 
 function Cart () {
-    const [active, setActive] = useState(false);
-    const {cart:products, clearCart } = useCart();
-    const handleClick = () => {
+    const [ active, setActive ] = useState(false);
+    const { cart, clearCart,addToCart,deleteFromCart,total } = useCart();
+    const renderAside = () => {
         setActive(!active)
     }
+
     return (
         <div>
-            <img onClick={handleClick} className="svgCart" alt="bag icon" src={shopCart}/>
+            <img onClick={renderAside} className="svgCart" alt="bag icon" src={shopCart}/>
             {active && (
                 <aside>
-                    <h3>Your shopping Bag</h3>
-                    <div id="inventory">
-                        {products?.map(product=>(
-                            <div id={product.id}>
-                                <img alt={product.title} src={product.thumbnail}/>
-                                <div className="cart-btns">
-                                    <button>+</button>
-                                    <input type="number" value={1}/>
-                                    <button>-</button>
-                                </div>
-                            </div>
-                        ))}
+                    <div id="cart__wrapper">
+                        <h3 className="cart__title">Your shopping Bag</h3>
+                        <ul id="cart-inventory">
+                            {cart?.map(product=>(
+                                <CartItem
+                                    key={product.id}
+                                    {...product}
+                                    add={()=>addToCart(product)}
+                                    decrease={()=>deleteFromCart(product)}
+                                />
+                            ))}
+                        </ul>
+                        <button onClick={()=>{clearCart()}}>Clear Cart</button>
                     </div>
-                    <button onClick={()=>{clearCart()}}>Clear Cart</button>
+                    <footer> Your subtotal: $<span>{total}</span></footer>
                 </aside>
-
             )}
         </div>
     )
 }
+
+function CartItem ({title,add,decrease,quantity,thumbnail,category,price}) {
+
+    return(
+        <li className="cart-item">
+            <img className="cart__item--img" alt={title} src={thumbnail}/>
+            <div className="cart__item--details">
+                <div className="cart__item--category">
+                    {category}
+                </div>
+                <div className="cart__item--name">
+                    {title}
+                </div>
+                <div className="cart__item--btns">
+                    <button onClick={add}>+</button>
+                    <input type="number" value={quantity}/>
+                    <button onClick={decrease} >-</button>
+                </div>            
+            </div>
+            <div className="cart__item--price">
+               ${price}
+            </div>
+        </li>
+    )
+}
+
 
 export default Cart
