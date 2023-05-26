@@ -2,7 +2,7 @@ import logo from "../../../assets/images/logo.png"
 import Cart from "../../Cart"
 import { useCart } from "../../../hooks/useCart"
 const Top = () => {
-    const { getPrice } = useCart();
+    const { total } = useCart();
 
     return (
         <div className="top-header">
@@ -10,7 +10,7 @@ const Top = () => {
                 <img alt="no-logo" src={logo}/>
             </div>
             <Cart />
-            ${getPrice()}.00
+            ${total}.00
         </div>
     )
 }
