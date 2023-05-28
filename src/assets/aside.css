@@ -4,18 +4,35 @@ aside {
     right: 0;
     width: 33.33333%;
     height: 100%;
-    background: #222;
+    background: white;
     z-index: 10;
     overflow-y: scroll;
-    color: white;
+    color: black;
     padding: 0;
     margin: 0;
 }
 
-footer {
-    color: white;
+aside span {
+    padding: 1.5rem;
     text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+aside button {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(42, 42, 42);
+}
+
+aside button:hover {
+    color: white;
+    background-color: rgb(42, 42, 42);
+    border: 2px solid white;
+}
+
 
 #cart__wrapper {
     display: flex;
@@ -32,8 +49,8 @@ footer {
     width: 100%;
     padding-top: 30px;
     font-size: 2rem;
-    color: white;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .cart-item {
