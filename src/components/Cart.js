@@ -15,6 +15,9 @@ function Cart () {
             <img onClick={renderAside} className="svgCart" alt="bag icon" src={shopCart}/>
             {active && (
                 <aside>
+                    <span>
+                        <button onClick={()=>setActive(false)}>{"Close Cart"}</button>
+                    </span>
                     <div id="cart__wrapper">
                         <h3 className="cart__title">Your shopping Bag</h3>
                         <ul id="cart-inventory">
