@@ -52,7 +52,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: rgb(249, 249, 249);
 }
-  
+
+header {
+	background-color: khaki;
+}
+
 code {
 font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 	monospace;

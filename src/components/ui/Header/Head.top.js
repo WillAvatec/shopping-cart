@@ -9,8 +9,10 @@ const Top = () => {
             <div className="logo">
                 <img alt="no-logo" src={logo}/>
             </div>
-            <Cart />
-            ${total}.00
+            <div className="cart-container">
+                <Cart />
+                ${total}.00
+            </div>
         </div>
     )
 }

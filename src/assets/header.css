@@ -15,9 +15,14 @@ header {
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    max-width: 900px;
-    margin: 0px auto;
+    max-width: 100%;
     padding: 2rem 4rem;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .logo {
@@ -38,6 +43,7 @@ header {
     justify-content: center;
 }
 
+
 .bottom-header a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -51,8 +57,9 @@ header {
 
 .bottom-header a:hover {
     background-color: #e7ab3c;
+    border-color: #e7ab3c;
 }
 
 .bottom-header a:first-of-type{
-    border-left: 2px solid #3b3b3b;
+    box-shadow: -1px 0 0 #3b3b3b;
 }
