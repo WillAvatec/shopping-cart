@@ -10,18 +10,15 @@ function CatalogPage() {
       <div className="home">
         <Header />
         <div id="cards-container">
-          {mockData.map(product => {
-              return (
-                <Card
-                  key={product.id}
-                  image={product.thumbnail} 
-                  title={product.title}
-                  price={product.price}
-                  product={product}
-                />
-              )
-            })
-          }
+          {mockData.map(product =>(
+            <Card
+              key={product.id}
+              image={product.images[0]} 
+              title={product.title}
+              price={product.price}
+              product={product}
+              />
+          ))}
         </div>
       </div>
   );
