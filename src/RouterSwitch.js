@@ -1,15 +1,16 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import { HomePage,CatalogPage,ContactUs } from "./pages/"
+import { HomePage, CatalogPage, ContactUs, ProductPage } from "./pages/"
 import { CartProvider } from "./context/cart";
 const RouteSwitch = () => {
     return (
         <CartProvider>
             <BrowserRouter>
-                <Routes>
+                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/shop-catalog" element={<CatalogPage/>}/>
+                    <Route path='/shop-catalog/:id'element={<ProductPage/>} />
                     <Route path='/contact-us' element={<ContactUs/>} />
-                </Routes>
+                 </Routes>
             </BrowserRouter>
         </CartProvider>
     )

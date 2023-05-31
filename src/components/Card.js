@@ -1,5 +1,6 @@
 import Back from '../assets/images/logo.png'
 import { useCart } from '../hooks/useCart'
+import { Link } from 'react-router-dom'
 
 const Card = ({title,price,image,product}) => {
     const { addToCart } = useCart()
@@ -11,7 +12,9 @@ const Card = ({title,price,image,product}) => {
                 <img className="back-card-img" alt={`product`} src={Back} />
             </div>
             <div className="def-container">
+            <Link key={title+price} to={`./${title}`}>
                 <div className="card-title">{title}</div>
+            </Link>
                 {/*<div className="card-description">{description}</div>*/ }
                 <div className="card-price">${price}</div>
             </div>
