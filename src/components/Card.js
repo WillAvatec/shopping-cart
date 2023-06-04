@@ -1,4 +1,4 @@
-import Back from '../assets/images/logo.png'
+import Back from '../assets/images/logo.svg'
 import { useCart } from '../hooks/useCart'
 import { Link } from 'react-router-dom'
 

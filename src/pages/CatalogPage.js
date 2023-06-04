@@ -1,6 +1,6 @@
 import "../assets/card.css"
 import "../assets/catalog.css"
-import Header from "../components/ui/Header/Header";
+import Header from "../components/ui/Header";
 import Card from "../components/Card";
 import mockData from "../mocks/products.json"
 
