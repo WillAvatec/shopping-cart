@@ -1,65 +1,36 @@
 header {
     display: flex;
-    flex-flow: column nowrap;
-    margin-bottom: 20px;
-}
-
-.top-header, .bottom-header, .input-group {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.top-header {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
+    flex-direction: row;
     justify-content: space-between;
-    max-width: 100%;
-    padding: 2rem 4rem;
+    align-items: center;
+    padding: 2.2rem;
+    color: var(--text-primary-color);
 }
 
-.cart-container {
+ul {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    gap: 54px;
 }
 
-.logo {
-    padding: 0 20px;
-}
-
-.svgCart {
-    width: 29px;
-    height: 29px;
-    justify-self: end;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.bottom-header {
-    background-color: #252525;
-    display: flex;
-    justify-content: center;
-}
-
-
-.bottom-header a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 16px calc(40px + 0.4vw);
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-right: 2px solid #3b3b3b;
+#links-container a {
     position: relative;
+    color: var(--text-primary-color);
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.bottom-header a:hover {
-    background-color: #e7ab3c;
-    border-color: #e7ab3c;
+#links-container a::after {
+    transition: all ease-in-out 2s;
 }
 
-.bottom-header a:first-of-type{
-    box-shadow: -1px 0 0 #3b3b3b;
+#links-container a:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    outline: 1px solid var(--accent-red);
+    bottom: -20%;
+    width: 100%;
 }
