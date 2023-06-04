@@ -16,7 +16,7 @@ function Header (){
             </div>
             <nav>
                 <ul id="links-container">
-                    <li><Link to="/our-story">Our History</Link></li>
+                    <li><Link to="/our-story">Our Story</Link></li>
                     <li><Link to="/shop-catalog">Shop</Link></li>
                     <li><Link to="/contact-us">Contact Us</Link></li>
                 </ul>
