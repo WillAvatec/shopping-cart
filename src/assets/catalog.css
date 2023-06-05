@@ -1,8 +1,10 @@
 #cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-flow: dense;
+    column-gap: 2.1%;
+    row-gap: 50px;
     justify-items: center;
     align-items: center;
-    margin: 0 15px;
-    gap: 20px;
+    margin: 2rem;
 }

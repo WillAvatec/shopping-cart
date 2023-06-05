@@ -1,27 +1,36 @@
-import Back from '../assets/images/logo.svg'
-import { useCart } from '../hooks/useCart'
 import { Link } from 'react-router-dom'
 
-const Card = ({title,price,image,product}) => {
-    const { addToCart } = useCart()
-
+const Card = ({product}) => {
+    /* const { addToCart } = useCart(); */
+    const { title, price,images,brand} = product;
     return (
-        <div className="card" >
+        <article className="card" >
+
             <div className="img-container">
-                <img className="front-card-img" alt={`product${title}`} src={image}/>
-                <img className="back-card-img" alt={`product`} src={Back} />
+                <img className="front-card-img" alt={`product${title}`} src={images[0]}/>
+                <Link to={`./${title}`} />
             </div>
+
             <div className="def-container">
-            <Link key={title+price} to={`./${title}`}>
-                <div className="card-title">{title}</div>
-            </Link>
-                {/*<div className="card-description">{description}</div>*/ }
-                <div className="card-price">${price}</div>
+                <p className='def-brand'>{brand}</p>
+
+                <Link className='def-title' to={`./${title}`}>
+                    {title}
+                </Link>
+                <p className="def-price">USD {price}</p>
             </div>
-            <div className='btn-container'>
-                <button onClick={()=>{addToCart(product)}}>Add to Cart</button>
+
+            <div>
+                
             </div>
-        </div>
+
+            {/*This was the previous approach to change url
+                <div className='btn-container'>
+                    <button onClick={()=>{addToCart(product)}}>Add to Cart</button>
+                </div>
+            */}
+
+        </article>
     )
 }
 

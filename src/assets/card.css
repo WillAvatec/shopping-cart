@@ -1,5 +1,5 @@
 :root{
-    --bg-card:#f2eeeb;
+    --bg-card:#68594e;
     --card-border:rgb(229,229,229)
 }
 
@@ -16,77 +16,74 @@
 
     100% {
         display: block;
-        opacity: 0.2;
+        opacity: 0.75;
     }
 }
 
 .card {
-    background-color: white;
-    display: flex;
-    flex-flow: column nowrap;
-    width: max(18.229vw,300px);
-    margin: 0 25px 50px 0;
-    border: 2px solid var(--card-border);
+    display: inline-block;
+    width: 100%;
+    height: -webkit-fill-available;
+    margin-bottom: unset;
 }
 
 .img-container {
     position: relative;
-    width: max(18.229vw,300px);
-    height: max(18.229vw,300px);
+    padding-top: 153.4%;
+    box-sizing: border-box;
     overflow: hidden;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid var(--card-border);
 }
 
-.btn-container {
-    display: flex;
-    justify-content: center;
-}
-
-.front-card-img {
+.img-container a {
+    width: 100%;
     position: absolute;
-    margin: 10px;
+    top: 0;
+    left: 0;
+    padding-top: 153.4%;
+    z-index: 3;
 }
 
-.front-card-img:hover {
+.img-container img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    color: transparent;
+    filter: brightness(.94);
+    z-index: 1;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+.img-container:hover {
     animation: fadeInFromNone 0.3s ease-out;
     animation-fill-mode: forwards
-}
-
-
-.card img {
-    max-width:100%;
-    max-height:100%;
 }
 
 .def-container {
     display: flex;
     flex-direction: column;
-    height: 100%
 }
 
-.card-title {
-    text-align: center;
-    padding: 15px 20px 15px 0;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.card-description {
-    display: hidden;
-    font-size: 1.1rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.card-description:hover{
-    display:block
-}
-
-.card-price {
-    text-align: center;
+.def-brand {
     padding-top: 10px;
+    font-weight: 600;
+}
+
+.def-title {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-left: 0;
+    font-size: 1.125rem;
     font-weight: 400;
+}
+
+.def-price {
+    padding-top: 10px;
+    font-weight: 600;
     font-size: 1.1rem;
 }
