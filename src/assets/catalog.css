@@ -8,3 +8,15 @@
     align-items: center;
     margin: 2rem;
 }
+
+@media (max-width:620px) {
+    #cards-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width:620px) and (max-width:768px) {
+    #cards-container {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
