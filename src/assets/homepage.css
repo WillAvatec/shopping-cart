@@ -55,6 +55,7 @@ h1 span {
     display: block;
     font-size: clamp(3.5rem,10vw,5.7rem);
     font-weight: 600;
+    text-shadow: 3px 0px 4px black;
     color: var(--accent-red);
 }
 
