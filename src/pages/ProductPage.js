@@ -1,4 +1,4 @@
-import Header from "../components/ui/Header/Header"
+import Header from "../components/ui/Header"
 import { useParams } from "react-router-dom"
 import products from "../mocks/products.json"
 import "../assets/productPage.css"

@@ -1,6 +1,6 @@
 import "../assets/card.css"
 import "../assets/catalog.css"
-import Header from "../components/ui/Header/Header";
+import Header from "../components/ui/Header";
 import Card from "../components/Card";
 import mockData from "../mocks/products.json"
 
@@ -12,10 +12,8 @@ function CatalogPage() {
         <div id="cards-container">
           {mockData.map(product =>(            
               <Card
-              image={product.images[0]} 
-              title={product.title}
-              price={product.price}
-              product={product}
+                key={product.title}
+                product={product}
               />
           ))}
         </div>

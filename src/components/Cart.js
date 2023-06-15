@@ -1,5 +1,5 @@
 import { useState,useContext } from "react";
-import shopCart from "../assets/images/shop-cart.svg"
+import {ReactComponent as CartSvg} from '../assets/images/cart.svg';
 import "../assets/aside.css"
 import {useCart} from "../hooks/useCart"
 
@@ -12,7 +12,7 @@ function Cart () {
 
     return (
         <div>
-            <img onClick={renderAside} className="svgCart" alt="bag icon" src={shopCart}/>
+            <CartSvg onClick={renderAside}/>
             {active && (
                 <aside>
                     <span>

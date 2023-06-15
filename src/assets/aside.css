@@ -1,15 +1,23 @@
 aside {
+    --bg-color: hsla(207, 44%, 49%, 0.8);
+    display: block;
     position: fixed;
+    height: 100%;
     top: 0;
     right: 0;
-    width: 33.33333%;
-    height: 100%;
-    background: white;
+    background: var(--bg-color);
+    backdrop-filter: blur(10px);
     z-index: 10;
     overflow-y: scroll;
     color: black;
     padding: 0;
     margin: 0;
+}
+
+@media  (max-width:780px) {
+    aside {
+        inset: 0 0 0 3%;
+    }
 }
 
 aside span {
@@ -42,7 +50,6 @@ aside button:hover {
     width: 70%;
     height: 100%;
     margin: 0 auto;
-    cursor: default;
 }
 
 .cart__title {

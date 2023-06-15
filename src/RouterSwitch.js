@@ -7,6 +7,7 @@ const RouteSwitch = () => {
             <HashRouter>
                  <Routes>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/our-story" element={<CatalogPage/>}/>
                     <Route path="/shop-catalog" element={<CatalogPage/>}/>
                     <Route path='/shop-catalog/:id'element={<ProductPage/>} />
                     <Route path='/contact-us' element={<ContactUs/>} />
