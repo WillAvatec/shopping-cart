@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.67b7c2db.css",
-    "main.js": "/shopping-cart/static/js/main.161a74e4.js",
+    "main.css": "/shopping-cart/static/css/main.aa7d0d6c.css",
+    "main.js": "/shopping-cart/static/js/main.ae1f788c.js",
+    "static/media/drake-unsplash.png": "/shopping-cart/static/media/drake-unsplash.29ff629f6e8b86284038.png",
+    "static/media/logo.svg": "/shopping-cart/static/media/logo.da26518b7e95b5e193c70341e00e110a.svg",
+    "static/media/user.svg": "/shopping-cart/static/media/user.8d4b77481dcbf351e0cc3ecfc36e1bed.svg",
+    "static/media/cart.svg": "/shopping-cart/static/media/cart.66a2c46e762020b27b07a988c94cd3d2.svg",
     "index.html": "/shopping-cart/index.html",
-    "static/media/shop-cart.svg": "/shopping-cart/static/media/shop-cart.b8d7aeb21330d24da31cf10c2d4d70d0.svg",
-    "main.67b7c2db.css.map": "/shopping-cart/static/css/main.67b7c2db.css.map",
-    "main.161a74e4.js.map": "/shopping-cart/static/js/main.161a74e4.js.map"
+    "static/media/burger-menu-svgrepo-com.svg": "/shopping-cart/static/media/burger-menu-svgrepo-com.ea45cc36e7fa2dd506792c4db3534d9e.svg",
+    "static/media/search.svg": "/shopping-cart/static/media/search.ca71e7565b62ae45033a47f56ca18321.svg",
+    "main.aa7d0d6c.css.map": "/shopping-cart/static/css/main.aa7d0d6c.css.map",
+    "main.ae1f788c.js.map": "/shopping-cart/static/js/main.ae1f788c.js.map"
   },
   "entrypoints": [
-    "static/css/main.67b7c2db.css",
-    "static/js/main.161a74e4.js"
+    "static/css/main.aa7d0d6c.css",
+    "static/js/main.ae1f788c.js"
   ]
 }
