@@ -1,89 +1,88 @@
-:root{
-    --bg-card:#68594e;
-    --card-border:rgb(229,229,229)
+:root {
+  --bg-card: #68594e;
+  --card-border: rgb(229, 229, 229);
 }
 
 @keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 1;
-    }
+  0% {
+    display: none;
+    opacity: 1;
+  }
 
-    50% {
-        display: block;
-        opacity: 0.5;
-    }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
 
-    100% {
-        display: block;
-        opacity: 0.75;
-    }
+  100% {
+    display: block;
+    opacity: 0.75;
+  }
 }
 
 .card {
-    display: inline-block;
-    width: 100%;
-    height: -webkit-fill-available;
-    margin-bottom: unset;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: unset;
 }
 
 .img-container {
-    position: relative;
-    padding-top: 153.4%;
-    box-sizing: border-box;
-    overflow: hidden;
+  position: relative;
+  padding-top: 153.4%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .img-container a {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 153.4%;
-    z-index: 3;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 153.4%;
+  z-index: 3;
 }
 
 .img-container img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;    
-    color: transparent;
-    filter: brightness(.94);
-    z-index: 1;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-    vertical-align: middle;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  filter: brightness(0.94);
+  z-index: 1;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
 }
 
 .img-container:hover {
-    animation: fadeInFromNone 0.3s ease-out;
-    animation-fill-mode: forwards
+  animation: fadeInFromNone 0.3s ease-out;
+  animation-fill-mode: forwards;
 }
 
 .def-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .def-brand {
-    padding-top: 10px;
-    font-weight: 600;
+  padding-top: 10px;
+  font-weight: 600;
 }
 
 .def-title {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    padding-left: 0;
-    font-size: 1.125rem;
-    font-weight: 400;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  padding-left: 0;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .def-price {
-    padding-top: 10px;
-    font-weight: 600;
-    font-size: 1.1rem;
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
