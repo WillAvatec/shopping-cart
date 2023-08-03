@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.aa7d0d6c.css",
-    "main.js": "/shopping-cart/static/js/main.ae1f788c.js",
+    "main.css": "/shopping-cart/static/css/main.33e0116b.css",
+    "main.js": "/shopping-cart/static/js/main.97e04b23.js",
     "static/media/drake-unsplash.png": "/shopping-cart/static/media/drake-unsplash.29ff629f6e8b86284038.png",
     "static/media/logo.svg": "/shopping-cart/static/media/logo.da26518b7e95b5e193c70341e00e110a.svg",
     "static/media/user.svg": "/shopping-cart/static/media/user.8d4b77481dcbf351e0cc3ecfc36e1bed.svg",
@@ -9,11 +9,11 @@
     "index.html": "/shopping-cart/index.html",
     "static/media/burger-menu-svgrepo-com.svg": "/shopping-cart/static/media/burger-menu-svgrepo-com.ea45cc36e7fa2dd506792c4db3534d9e.svg",
     "static/media/search.svg": "/shopping-cart/static/media/search.ca71e7565b62ae45033a47f56ca18321.svg",
-    "main.aa7d0d6c.css.map": "/shopping-cart/static/css/main.aa7d0d6c.css.map",
-    "main.ae1f788c.js.map": "/shopping-cart/static/js/main.ae1f788c.js.map"
+    "main.33e0116b.css.map": "/shopping-cart/static/css/main.33e0116b.css.map",
+    "main.97e04b23.js.map": "/shopping-cart/static/js/main.97e04b23.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa7d0d6c.css",
-    "static/js/main.ae1f788c.js"
+    "static/css/main.33e0116b.css",
+    "static/js/main.97e04b23.js"
   ]
 }
