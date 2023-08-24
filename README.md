@@ -1,5 +1,10 @@
 Live Preview: https://willavatec.github.io/shopping-cart/
 
+#Pages
+
+![shop](https://github.com/WillAvatec/shopping-cart/assets/115133403/34ed6846-7033-406b-adc4-a842c962dc2f)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
